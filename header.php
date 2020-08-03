@@ -177,10 +177,6 @@
                             <label for="inputPassword">Password</label>
                             <input type="password" name="pwd" class="form-control" id="inputPassword"  required>
                         </div>
-                        <!-- <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Forgot Password</label>
-                        </div> -->
                         <div class="modal-footer">
                             <button type="submit"  name="submit-login" id="login-btn"
                             class="btn btn-primary">Login</button>

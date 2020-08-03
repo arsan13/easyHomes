@@ -141,14 +141,14 @@
                                         <?php if($saved_res -> fetch_assoc()): ?>
                                             
                                             <form action="inc-saved.php" method="post">
-                                                <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0" title="Remove from shortlist"
+                                                <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0 btn-outline-light" title="Remove from shortlist"
                                                 name="unsavebtn"><img src="images/saved.webp" width="30"></button>
                                             </form>
 
                                         <?php else: ?>
 
                                             <form action="inc-saved.php" method="post">
-                                                <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0" title="Add to shortlist"
+                                                <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0 btn-outline-light" title="Add to shortlist"
                                                 name="savebtn"><img src="images/save.png" width="30"></button>
                                             </form>
 

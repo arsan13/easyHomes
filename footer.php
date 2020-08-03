@@ -11,10 +11,10 @@
                 <h6 class="text-light mb-2">Locations</h6>
                 <ul class="list-unstyled text-small my-2">
                     <li><span class="text-muted">Chennai</span></li>
-                    <li><span class="text-muted">Hyderabad</span></li>
                     <li><span class="text-muted">Coimbatore</span></li>
                     <li><span class="text-muted">Bangalore</span></li>
                     <li><span class="text-muted">New Delhi</span></li>
+                    <li><span class="text-muted">Kochi</span></li>
                     <li><span class="text-muted">Hyderabad</span></li>
                     <li><span class="text-muted">Mumbai</span></li>
                     <li><span class="text-muted">Trichy</span></li>
