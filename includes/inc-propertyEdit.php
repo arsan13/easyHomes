@@ -21,12 +21,12 @@ if(isset($_POST['update']))
     
     if($edit)
     {    
-        header("Location: propertyEdit.php?update=success");
+        header("Location: ../propertyEdit.php?update=success");
         exit();
     }
     else
     {    
-        header("Location: propertyEdit.php?update=failed");
+        header("Location: ../propertyEdit.php?update=failed");
         exit();
     }
     

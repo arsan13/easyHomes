@@ -23,19 +23,19 @@
             
             if($row['email'] == $email)
             {
-                header("Location: profileEdit.php?edit=emailExist");
+                header("Location: ../profileEdit.php?edit=emailExist");
                 exit();
             }
             if($row['phone'] == $phone)
             {
-                header("Location: profileEdit.php?edit=phoneExist");
+                header("Location: ../profileEdit.php?edit=phoneExist");
                 exit();
             }
         }
         
         if( $pwd1 != $pwd2)
         {
-            header("Location: profileEdit.php?edit=pwdMismatch");
+            header("Location: ..//profileEdit.php?edit=pwdMismatch");
             exit();
         }
         else
@@ -46,7 +46,7 @@
             
             $conn->query($sql);
             
-            header("Location: profileEdit.php?edit=success");
+            header("Location: ../profileEdit.php?edit=success");
             exit();    
         }
 

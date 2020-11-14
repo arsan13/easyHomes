@@ -1,4 +1,3 @@
-
     <footer class="pt-3 md-5 pt-md-4 pb-2 bg-dark border-top">
         <div class="row">
             <div class="col-6 ml-5 ">

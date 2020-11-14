@@ -37,10 +37,10 @@
                 if($fileSize < 200000)
                 {
                     $fileNameNew = uniqid('main').'.'.$fileActualExt;
-                    $fileDest = "uploads/main/".$fileNameNew;
+                    $fileDest = "../uploads/main/".$fileNameNew;
                     if(file_exists($fileDest))
                     {
-                        header("Location: input.php?upload=existError");
+                        header("Location: ../input.php?upload=existError");
                         exit();
                     }
                     else
@@ -60,19 +60,19 @@
                 }
                 else
                 {
-                    header("Location: input.php?upload=sizeError");
+                    header("Location: ../input.php?upload=sizeError");
                     exit();
                 }
             }
             else
             {
-                header("Location: input.php?upload=error");
+                header("Location: ../input.php?upload=error");
                 exit();
             }
         }
         else
         {
-            header("Location: input.php?upload=typeError");
+            header("Location: ../input.php?upload=typeError");
             exit();
         }
 
@@ -102,10 +102,10 @@
                             if($filesSize < 2000000)
                             {
                                 $filesNameNew = uniqid('int',true).'.'.$filesActualExt;
-                                $filesDest = "uploads/interior/".$filesNameNew;
+                                $filesDest = "../uploads/interior/".$filesNameNew;
                                 if(file_exists($filesDest))
                                 {
-                                    header("Location: input.php?upload=existError");
+                                    header("Location: ../input.php?upload=existError");
                                     exit();
                                 }
                                 else
@@ -122,28 +122,28 @@
                             }
                             else
                             {
-                                header("Location: input.php?upload=sizeError");
+                                header("Location: ../input.php?upload=sizeError");
                                 exit();
                             }
                         }
                         else
                         {
-                            header("Location: input.php?upload=error");
+                            header("Location: ../input.php?upload=error");
                             exit();
                         }
                     }
                     else
                     {
-                        header("Location: input.php?upload=typeError");
+                        header("Location: ../input.php?upload=typeError");
                         exit();
                     }
                 }  
-                header("Location: input.php?upload=success");
+                header("Location: ../input.php?upload=success");
                 exit();
             }
             else
             {
-                header("Location: index.php?upload=limitError");
+                header("Location: ../index.php?upload=limitError");
                 exit();
             }
             

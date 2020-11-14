@@ -20,7 +20,7 @@
                     
                     <div class="col-4">
                         <div class="card my-4 mx-3">
-                            <img src='<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
+                            <img src='uploads/<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush lead">
                                     <li class="list-group-item">
@@ -41,7 +41,7 @@
                                     <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-primary btn-block mb-1"
                                     name="submit">View more details</button>
                                 </form>
-                                <form action="inc-saved.php" method="post">
+                                <form action="includes/inc-saved.php" method="post">
                                     <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-danger btn-block"
                                     name="unsavebtn">Remove from shortlist</button>
                                 </form>

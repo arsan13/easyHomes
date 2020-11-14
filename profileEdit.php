@@ -61,7 +61,7 @@
 
         <h1 class="display-4">Edit your profile</h1>
         <hr>
-        <form action="inc-profileEdit.php" method="POST" id="edit-form">
+        <form action="includes/inc-profileEdit.php" method="POST" id="edit-form">
             <div class="form-group">
                 <label for="inputName">Full Name</label>
                 <input type="text" name="name" value="<?php echo $name;?>" class="form-control" id="inputName"

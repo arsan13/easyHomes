@@ -11,7 +11,7 @@
         $result = $conn->query($sql);
         $count = $result->num_rows;
     ?>
-    
+
     <?php if($count > 0): ?>
 
         <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
@@ -29,7 +29,7 @@
                 ?>
 
                 <div class="carousel-item <?php echo $active;?>">
-                <img src="<?php echo $row['images'];?>" class="d-block w-100">
+                <img src="upload/<?php echo $row['images'];?>" class="d-block w-100">
                 </div>
 
             <?php endwhile; ?>
@@ -66,7 +66,7 @@
     <div class="container my-4">    
         <div class="grid-wrapper">
             <div class="imgGrid d-none d-md-block">
-                <img src='<?php echo $row['mainImage']; ?>' width="400" height="300">
+                <img src='uploads/<?php echo $row['mainImage']; ?>' width="400" height="300">
             </div>
             <div class="nestedGrid">
                 <div class="box">

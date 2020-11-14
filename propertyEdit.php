@@ -32,7 +32,7 @@
 
         <h1 class="display-4">Edit your Post</h1>
         <hr class="my-4">
-        <form action="inc-propertyEdit.php" method="post">
+        <form action="includes/inc-propertyEdit.php" method="post">
             <div class="form-group row">
                 <label for="inputRent">Rent/Month(INR)</label>
                 <input type="number" name="rent" id="inputRent" aria-describedby="emailHelp" 

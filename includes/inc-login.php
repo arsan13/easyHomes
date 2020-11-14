@@ -1,5 +1,4 @@
 <?php
-
     include 'inc-dbconn.php';
 
     if(isset($_POST['submit-login'])) 
@@ -17,13 +16,11 @@
             $_SESSION['name'] = $row['name'];
             $_SESSION['phone'] = $row['phone'];
             $_SESSION['email'] = $row['email'];
-            header("Location: index.php?login=success ");
+            header("Location: ../index.php?login=success ");
         }    
         else
         {
-            header("Location: index.php?login=failed ");
+            header("Location: ../index.php?login=failed ");
         }
     }
-
-
 ?>

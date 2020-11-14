@@ -52,7 +52,7 @@
 
         <h1 class="display-4">Post your property</h1>
         <hr class="my-4">
-        <form action="inc-upload.php" method="post" enctype="multipart/form-data">
+        <form action="includes/inc-upload.php" method="post" enctype="multipart/form-data">
             <div class="form-group row">
                 <label for="inputRent">Rent/Month(INR)</label>
                 <input type="number" name="rent" id="inputRent" aria-describedby="emailHelp" 

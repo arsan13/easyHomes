@@ -1,10 +1,6 @@
-<?php
-    include 'header.php';
-?>  
+<?php include 'header.php';?>  
 
-    <div class=" d-none d-md-block">
-        <img src="images/banner2.jpg" width="1265">
-    </div> 
+    <div class=" d-none d-md-block"> <img src="images/banner2.jpg" width="1265"> </div> 
 
     <div class="container my-3 p-2">
         <form action="" method="post">
@@ -65,24 +61,18 @@
     </div>
 
     <?php
-        if(isset($_POST['filter']))
-        {       
+        if(isset($_POST['filter'])){       
             $location = $_POST['location'];
             $price = $_POST['price'];
             $type = $_POST['type'];
 
-            include 'inc-filter.php';
-        }
-        else
-        {
-            if(isset($_SESSION['uid']))
-            {
-            $uid = $_SESSION['uid'];
-            $sql = "SELECT * FROM users,properties
-                    WHERE users.uid=properties.ownerId AND uid != '$uid';";
-            }        
-            else
-            {
+            include 'includes/inc-filter.php';
+        }else{
+            if(isset($_SESSION['uid'])){
+                $uid = $_SESSION['uid'];
+                $sql = "SELECT * FROM users,properties
+                        WHERE users.uid=properties.ownerId AND uid != '$uid';";
+            }else{
                 $sql = "SELECT * FROM users,properties WHERE users.uid=properties.ownerId LIMIT 9 ;";
             }
         }
@@ -102,10 +92,9 @@
             <?php if($count > 0): ?>
                 
                 <?php while($row = $result->fetch_assoc()): ?>
-        
                     <div class="col-4">
                         <div class="card my-4 mx-3">
-                            <img src='<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
+                            <img src='uploads/<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush lead">
                                     <li class="list-group-item">
@@ -140,14 +129,14 @@
                                         
                                         <?php if($saved_res -> fetch_assoc()): ?>
                                             
-                                            <form action="inc-saved.php" method="post">
+                                            <form action="includes/inc-saved.php" method="post">
                                                 <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0 btn-outline-light" title="Remove from shortlist"
                                                 name="unsavebtn"><img src="images/saved.webp" width="30"></button>
                                             </form>
 
                                         <?php else: ?>
 
-                                            <form action="inc-saved.php" method="post">
+                                            <form action="includes/inc-saved.php" method="post">
                                                 <button type="submit" value="<?php echo $row['imgId']; ?>" class="btn btn-white pt-0 btn-outline-light" title="Add to shortlist"
                                                 name="savebtn"><img src="images/save.png" width="30"></button>
                                             </form>

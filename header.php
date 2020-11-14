@@ -1,5 +1,6 @@
 <?php
-    include 'inc-dbconn.php';
+    
+    include 'includes/inc-dbconn.php';
     session_start();
 ?>
 
@@ -25,7 +26,7 @@
                 var pwd1 = $("#inputPassword1").val();
                 var pwd2 = $("#inputPassword2").val();
                 var submit = $("#signup-btn").val();
-                $(".form-message").load("inc-signup.php",
+                $(".form-message").load("includes/inc-signup.php",
                 {
                     name: name,
                     emails: emails,
@@ -60,7 +61,6 @@
     
     <?php endif; ?>
     
-
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
         <span class="navbar-brand">easyHomes</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -136,7 +136,7 @@
                 </ul>
                 
                 <div class="btn">
-                    <form action="inc-logout.php" method="post" id="logout-form">
+                    <form action="includes/inc-logout.php" method="post" id="logout-form">
                         <button class="btn btn-info" name="logout-btn" id="logout-btn">Logout</button>
                     </form>
                 </div>
@@ -167,7 +167,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form action="inc-login.php" method="POST" id="login-form">
+                    <form action="includes/inc-login.php" method="POST" id="login-form">
                         <div class="form-group">
                             <label for="inputEmail2">Email address</label>
                             <input type="email" name="email" class="form-control" id="inputEmail2" aria-describedby="emailHelp" required>
@@ -201,7 +201,7 @@
                 </div>
                 <div class="modal-body">
                     <span class="form-message"></span>
-                    <form action="inc-signup.php" method="POST" id="signup-form">
+                    <form action="includes/inc-signup.php" method="POST" id="signup-form">
                         <div class="form-group">
                             <label for="inputName">Full Name</label>
                             <input type="text" name="name" class="form-control" id="inputName"

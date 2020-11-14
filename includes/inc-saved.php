@@ -19,18 +19,18 @@ if(isset($_POST['savebtn']))
 
             if($res_insert)
             {
-                header('Location: index.php?save=success');
+                header('Location: ../index.php?save=success');
                 exit();
             }
             else
             {
-                header('Location: index.php?save=failed');
+                header('Location: ../index.php?save=failed');
                 exit();
             }
         }
         else
         {
-            header('Location: index.php?save=failed');
+            header('Location: ../index.php?save=failed');
             exit();
         }
 
@@ -46,12 +46,12 @@ if(isset($_POST['savebtn']))
         
         if($result)
         {
-            header('Location: index.php?delete=success');
+            header('Location: ../index.php?delete=success');
             exit();
         }
         else
         {
-            header('Location: index.php?delete=failed');
+            header('Location: ../index.php?delete=failed');
             exit();
         }
     }

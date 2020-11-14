@@ -38,7 +38,7 @@ if(isset($_POST['propertyDeleteBtn']))
     $res_maindel = $conn->query($del_main);
 
     
-    header("Location: listings.php?delete=success");
+    header("Location: ../listings.php?delete=success");
     exit();
 
 }

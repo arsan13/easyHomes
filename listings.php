@@ -32,7 +32,7 @@
 <div class="container">
     <div class="jumbotron">
         <h3 class="display-4">Posted Properties</h3> <hr>
-        <div class="row">
+        <div class="row">   
 
             <?php if($count > 0): ?>
 
@@ -40,7 +40,7 @@
                     
                     <div class="col-4">
                         <div class="card my-4 mx-3">
-                            <img src='<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
+                            <img src='uploads/<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
                             <div class="card-body">
                                 <ul class="list-group list-group-flush lead">
                                     <li class="list-group-item">
@@ -68,7 +68,7 @@
                                         value="<?php echo $row['imgId']; ?>" class="btn btn-secondary px-4" >Edit</button>
                                     </form>
 
-                                    <form action="inc-propertyDelete.php" method="post">
+                                    <form action="includes/inc-propertyDelete.php" method="post">
                                         <button type="button"  class="btn btn-danger px-3" data-toggle="modal" data-target="#deleteConfirm">Delete</button>
                                     </form>
                                     <div class="modal fade" id="deleteConfirm" tabindex="-1" role="dialog">
@@ -84,7 +84,7 @@
                                                     <p>Are you sure you want to delete this post?</p>
                                                 </div>
                                                 <div class="modal-footer">
-                                                    <form action="inc-propertyDelete.php" method="post">
+                                                    <form action="includes/inc-propertyDelete.php" method="post">
                                                         <button type="submit" name="propertyDeleteBtn"
                                                         value="<?php echo $row['imgId']; ?>" class="btn btn-primary btn-block px-3" >Yes</button>
                                                     </form>
