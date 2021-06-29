@@ -18,7 +18,7 @@
 
                 <?php while($row = $result->fetch_assoc()): ?>
                     
-                    <div class="col-4">
+                    <div class="col-lg-4 col-md-auto col-sm-1 col-xs-1">
                         <div class="card my-4 mx-3">
                             <img src='uploads/<?php echo $row['mainImage']; ?>' width=250 height=250 class='card-img-top'>
                             <div class="card-body">
